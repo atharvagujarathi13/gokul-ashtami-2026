@@ -115,7 +115,7 @@
     <section class="details">
       <div class="detail"><div class="icon">📅</div><div class="label" data-i18n="dateLabel">दिनांक</div><div class="value" data-i18n="date">०३ सप्टेंबर २०२६</div></div>
       <div class="detail"><div class="icon">🕰️</div><div class="label" data-i18n="timeLabel">वेळ</div><div class="value" data-i18n="time">सायंकाळी ७ वाजल्यापासून</div></div>
-      <div class="detail"><div class="icon">📍</div><div class="label" data-i18n="venueLabel">स्थळ</div><div class="value">Vitthal Nagar</div></div>
+      <div class="detail"><div class="icon">📍</div><div class="label" data-i18n="venueLabel">स्थळ</div><div class="value">1st Floor, Above Rathod Classes, Vitthal Nagar, Yeola, Nashik 423401</div></div>
       <div class="detail"><div class="icon">🪔</div><div class="label" data-i18n="attractionLabel">विशेष</div><div class="value" data-i18n="attraction">सुंदर सजावट व हळदी-कुंकू</div></div>
     </section>
 
@@ -132,8 +132,8 @@
     <section class="contacts">
       <h3 data-i18n="contactTitle">संपर्क</h3>
       <div class="contact-row">
-        <a class="phone" href="tel:9527930389">Jitendra Gujarathi · 9527930389</a>
-        <a class="phone" href="tel:9970737037">Atharva Gujarathi · 9970737037</a>
+        <a class="phone" href="tel:8459979318">Tanuja Gujarathi · 8459979318</a>
+        <a class="phone" href="tel:9552444175">Gayatri Gujarathi · 9552444175</a>
       </div>
     </section>
     <footer data-i18n="footer">॥ जय श्री कृष्ण ॥</footer>
@@ -178,7 +178,7 @@ setLang(localStorage.getItem("gokulLang")||"mr");
 
 document.getElementById("shareBtn").addEventListener("click", async ()=>{
  const lang=localStorage.getItem("gokulLang")||"mr";
- const text = `${T[lang].title} ${T[lang].year}\n${T[lang].date} • ${T[lang].time}\n📍 Vitthal Nagar\n\nBalkrishna Gujarathi and Family`;
+ const text = `${T[lang].title} ${T[lang].year}\n${T[lang].date} • ${T[lang].time}\n📍 1st Floor, Above Rathod Classes, Vitthal Nagar, Yeola, Nashik 423401\n\nBalkrishna Gujarathi and Family`;
  if(navigator.share){ await navigator.share({title:T[lang].title,text,url:location.href}); }
  else { window.open("https://wa.me/?text="+encodeURIComponent(text+"\\n"+location.href),"_blank"); }
 });
